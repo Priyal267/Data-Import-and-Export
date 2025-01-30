@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Export and Import</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Export and Import</h1>
+    <form id="dataForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <div class="controls">
+        <button id="exportBtn">Export to CSV</button>
+        <input type="file" id="importFile" accept=".csv">
+    </div>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will appear here -->
+        </tbody>
+    </table>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
